@@ -12,11 +12,14 @@ class InfoItem: NSObject {
     var sumInfo: String
     // the release date of the news
     var reDate: String
+    // the url of the news
+    var url: URL
     
     
-    init(sumInfo: String, reDate: String) {
+    init(sumInfo: String, reDate: String, url: URL) {
         self.sumInfo = sumInfo
         self.reDate = reDate
+        self.url = url
     }
 
 }
