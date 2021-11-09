@@ -63,6 +63,8 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="reDate" destination="Nf1-w1-lbp" id="erA-sN-iap"/>
+                                    <outlet property="sumInfo" destination="Nf1-w1-lbp" id="pPv-40-qvE"/>
                                     <segue destination="beo-dx-JdW" kind="show" id="eJE-rh-H1B"/>
                                 </connections>
                             </tableViewCell>
@@ -76,7 +78,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gSy-7j-giF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2300" y="-1116"/>
+            <point key="canvasLocation" x="2199" y="-1092"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xmE-E6-DQY">

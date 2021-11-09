@@ -8,7 +8,10 @@
 import UIKit
 
 class WebInfoTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var sumInfo: UILabel!
+    @IBOutlet weak var reDate: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
