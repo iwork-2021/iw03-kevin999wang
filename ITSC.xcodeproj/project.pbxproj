@@ -17,6 +17,8 @@
 		BB2A41B2273A6857007F1BC5 /* TzggTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A41B1273A6857007F1BC5 /* TzggTableViewController.swift */; };
 		BB2A41B4273A68B8007F1BC5 /* WlyxqkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A41B3273A68B8007F1BC5 /* WlyxqkTableViewController.swift */; };
 		BB2A41B6273A68D2007F1BC5 /* AqtgTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A41B5273A68D2007F1BC5 /* AqtgTableViewController.swift */; };
+		BB2A41B8273A6E67007F1BC5 /* WebInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A41B7273A6E67007F1BC5 /* WebInfoTableViewCell.swift */; };
+		BB2A41BA273A6FBA007F1BC5 /* InfoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A41B9273A6FBA007F1BC5 /* InfoItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		BB2A41B1273A6857007F1BC5 /* TzggTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TzggTableViewController.swift; sourceTree = "<group>"; };
 		BB2A41B3273A68B8007F1BC5 /* WlyxqkTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WlyxqkTableViewController.swift; sourceTree = "<group>"; };
 		BB2A41B5273A68D2007F1BC5 /* AqtgTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AqtgTableViewController.swift; sourceTree = "<group>"; };
+		BB2A41B7273A6E67007F1BC5 /* WebInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebInfoTableViewCell.swift; sourceTree = "<group>"; };
+		BB2A41B9273A6FBA007F1BC5 /* InfoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 				34EBE00B271F08E2005CC9EB /* SceneDelegate.swift */,
 				34EBE00D271F08E2005CC9EB /* ViewController.swift */,
 				34EBE00F271F08E2005CC9EB /* Main.storyboard */,
+				BB2A41B9273A6FBA007F1BC5 /* InfoItem.swift */,
+				BB2A41B7273A6E67007F1BC5 /* WebInfoTableViewCell.swift */,
 				BB2A41AF273A67D1007F1BC5 /* XwdtTableViewController.swift */,
 				BB2A41B1273A6857007F1BC5 /* TzggTableViewController.swift */,
 				BB2A41B3273A68B8007F1BC5 /* WlyxqkTableViewController.swift */,
@@ -152,6 +158,8 @@
 			files = (
 				BB2A41B2273A6857007F1BC5 /* TzggTableViewController.swift in Sources */,
 				BB2A41B6273A68D2007F1BC5 /* AqtgTableViewController.swift in Sources */,
+				BB2A41BA273A6FBA007F1BC5 /* InfoItem.swift in Sources */,
+				BB2A41B8273A6E67007F1BC5 /* WebInfoTableViewCell.swift in Sources */,
 				BB2A41B4273A68B8007F1BC5 /* WlyxqkTableViewController.swift in Sources */,
 				34EBE00E271F08E2005CC9EB /* ViewController.swift in Sources */,
 				34EBE00A271F08E2005CC9EB /* AppDelegate.swift in Sources */,

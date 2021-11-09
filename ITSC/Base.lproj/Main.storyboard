@@ -33,13 +33,13 @@
         <!--新闻动态-->
         <scene sceneID="hcN-WP-Ly9">
             <objects>
-                <tableViewController id="ySm-sG-py8" sceneMemberID="viewController">
+                <tableViewController id="ySm-sG-py8" customClass="XwdtTableViewController" customModule="ITSC" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="s7f-pP-HWp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="emL-FP-RhL" detailTextLabel="Nf1-w1-lbp" style="IBUITableViewCellStyleValue1" id="EKy-eY-gKU">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="emL-FP-RhL" detailTextLabel="Nf1-w1-lbp" style="IBUITableViewCellStyleValue1" id="EKy-eY-gKU" customClass="WebInfoTableViewCell" customModule="ITSC" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EKy-eY-gKU" id="cV1-gb-agL">
@@ -163,7 +163,7 @@
         <!--Table View Controller-->
         <scene sceneID="tKU-Rs-cDP">
             <objects>
-                <tableViewController title="通知公告" id="Bds-9T-xwP" userLabel="Table View Controller" sceneMemberID="viewController">
+                <tableViewController title="通知公告" id="Bds-9T-xwP" userLabel="Table View Controller" customClass="TzggTableViewController" customModule="ITSC" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="BXA-G4-8bA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -198,7 +198,7 @@
                                             <segue destination="beo-dx-JdW" kind="show" id="cd8-B9-RgH"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="f7H-oP-3OV" detailTextLabel="wPX-tD-Gdt" style="IBUITableViewCellStyleValue1" id="ail-ay-QpO">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="f7H-oP-3OV" detailTextLabel="wPX-tD-Gdt" style="IBUITableViewCellStyleValue1" id="ail-ay-QpO" customClass="WebInfoTableViewCell" customModule="ITSC" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="88" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ail-ay-QpO" id="S6I-MZ-RdG">
@@ -222,7 +222,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="cCI-3u-vur" detailTextLabel="pdc-na-Vbp" style="IBUITableViewCellStyleValue1" id="1Jl-nF-oTy">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="cCI-3u-vur" detailTextLabel="pdc-na-Vbp" style="IBUITableViewCellStyleValue1" id="1Jl-nF-oTy" customClass="WebInfoTableViewCell" customModule="ITSC" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="131.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Jl-nF-oTy" id="cbp-CD-04c">
@@ -282,13 +282,13 @@
         <!--信息化动态-->
         <scene sceneID="NdZ-Uf-yP4">
             <objects>
-                <tableViewController id="mOk-S4-geX" sceneMemberID="viewController">
+                <tableViewController id="mOk-S4-geX" customClass="WlyxqkTableViewController" customModule="ITSC" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="zO2-PK-KmO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="jJH-1v-NBi" detailTextLabel="B96-rt-KbG" style="IBUITableViewCellStyleValue1" id="Kqu-uQ-45e">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="jJH-1v-NBi" detailTextLabel="B96-rt-KbG" style="IBUITableViewCellStyleValue1" id="Kqu-uQ-45e" customClass="WebInfoTableViewCell" customModule="ITSC" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kqu-uQ-45e" id="xOh-AH-DKe">
@@ -330,13 +330,13 @@
         <!--安全公告-->
         <scene sceneID="C9F-N8-YhW">
             <objects>
-                <tableViewController id="u6o-FB-0ae" sceneMemberID="viewController">
+                <tableViewController id="u6o-FB-0ae" customClass="AqtgTableViewController" customModule="ITSC" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="M1B-gO-CK5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="1ix-Uu-sL2" detailTextLabel="vnt-N1-sNX" style="IBUITableViewCellStyleValue1" id="JOX-vH-snJ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="1ix-Uu-sL2" detailTextLabel="vnt-N1-sNX" style="IBUITableViewCellStyleValue1" id="JOX-vH-snJ" customClass="WebInfoTableViewCell" customModule="ITSC" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JOX-vH-snJ" id="Ae6-BH-eiB">
@@ -434,7 +434,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="eJE-rh-H1B"/>
+        <segue reference="cd8-B9-RgH"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="desktopcomputer" catalog="system" width="128" height="101"/>
