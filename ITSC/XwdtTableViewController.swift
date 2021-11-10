@@ -15,8 +15,16 @@ class XwdtTableViewController: UITableViewController {
         InfoItem(sumInfo: "sample", reDate: "2021-09-22", url: URL(string: "https://www.apple.cn")!)
     ]
     
+    //mark the numbers of the pages
+    var numOfPages: Int = 0
+    
+    let webView = WKWebView()
+    let urlMain = URL(string: "https://itsc.nju.edu.cn/xwdt/list.htm")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loadWebContent()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -49,7 +57,35 @@ class XwdtTableViewController: UITableViewController {
     }
     
     func loadWebContent() {
+        var url: URL
+        if numOfPages == 0 {
+            url = urlMain!
+        }
+        else {
+            url = URL(string: "https://itsc.nju.edu.cn/xwdt/list\(numOfPages).htm")!
+        }
         
+        let task = URLSession.shared.dataTask(with: url, completionHandler: {
+            data, response, error in
+            if let error = error {
+                print("\(error.localizedDescription)")
+                return
+            }
+            guard let httpResponse = response as? HTTPURLResponse,
+                  (200...299).contains(httpResponse.statusCode) else {
+                print("server error")
+                return
+            }
+            if let mimeType = httpResponse.mimeType, mimeType == "text/html",
+                        let data = data,
+                        let string = String(data: data, encoding: .utf8) {
+                            DispatchQueue.main.async {
+                                
+                            }
+            }
+        })
+        task.resume()
+            
     }
 
     /*
