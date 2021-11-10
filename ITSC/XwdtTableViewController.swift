@@ -7,6 +7,7 @@
 
 import UIKit
 import WebKit
+import SwiftSoup
 
 class XwdtTableViewController: UITableViewController {
     
@@ -23,7 +24,7 @@ class XwdtTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+//        print("1")
         loadWebContent()
 
         // Uncomment the following line to preserve selection between presentations
@@ -79,8 +80,20 @@ class XwdtTableViewController: UITableViewController {
             if let mimeType = httpResponse.mimeType, mimeType == "text/html",
                         let data = data,
                         let string = String(data: data, encoding: .utf8) {
+//                            print(string)
                             DispatchQueue.main.async {
-                                
+                                //use swiftsoup parse url
+                                do {
+                                    let parseFile = try SwiftSoup.parse(string)
+                                    print(parseFile)
+                                    print("1")
+                                   
+                                } catch Exception.Error(let type, let message) {
+                                    print(message)
+                                } catch {
+                                    print("error")
+                                }
+
                             }
             }
         })
