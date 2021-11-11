@@ -18,7 +18,7 @@ class WlyxqkTableViewController: UITableViewController {
     // the index of the items
 //    var indexOfItems: Int = 0
     //mark the numbers of the pages
-    var numOfPages: Int = 0
+    var numOfPages: Int = 1
     
     let urlMain = URL(string: "https://itsc.nju.edu.cn/wlyxqk/list.htm")
     
@@ -76,7 +76,7 @@ class WlyxqkTableViewController: UITableViewController {
     
     func loadWebContent() {
         var url: URL
-        if numOfPages == 0 {
+        if numOfPages == 1 {
             url = urlMain!
 //            print(urlMain)
         }

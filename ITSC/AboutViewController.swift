@@ -6,15 +6,67 @@
 //
 
 import UIKit
+import SwiftSoup
+//import WebKit
 
 class AboutViewController: UIViewController {
-
+    
+    let urlMain: URL = URL(string: "https://itsc.nju.edu.cn/main.htm")!
+    
+//    let webView = WKWebView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//        self.view = webView
+        self.handleContentOfUrl()
         // Do any additional setup after loading the view.
     }
     
+    
+    func handleContentOfUrl() {
+        let task = URLSession.shared.dataTask(with: urlMain, completionHandler: {
+            data, response, error in
+            if let error = error {
+                print("\(error.localizedDescription)")
+                return
+            }
+            guard let httpResponse = response as? HTTPURLResponse,
+                  (200...299).contains(httpResponse.statusCode) else {
+                print("server error")
+                return
+            }
+            if let mimeType = httpResponse.mimeType, mimeType == "text/html",
+                        let data = data,
+                        let string = String(data: data, encoding: .utf8) {
+//                            print(string)
+                DispatchQueue.main.async { [self] in
+                                //use swiftsoup parse url
+                    do {
+                        let parseFile: Document = try SwiftSoup.parse(string)
+                        let aboutInfo: Element = try parseFile.select("div.foot-center")[0]
+                        let aboutHtml: String = try aboutInfo.html()
+//                        self.webView.loadHTMLString(aboutHtml, baseURL: nil)
+                        let aboutParseFile: Document = try SwiftSoup.parse(aboutHtml)
+                        let aboutItem: Elements = try aboutParseFile.select("div.news_box")
+//                        let numOfEle: Int = aboutItem.array().count
+//                        print(numOfEle)
+                        for item in aboutItem{
+                            let context = try item.text()
+                            print(context)
+                        }
+                       
+                    } catch Exception.Error(let type, let message) {
+                        print(message)
+                    } catch {
+                        print("error")
+                    }
+
+                }
+            }
+        })
+        task.resume()
+        
+    }
 
     /*
     // MARK: - Navigation

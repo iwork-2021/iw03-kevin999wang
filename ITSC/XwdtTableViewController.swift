@@ -18,7 +18,7 @@ class XwdtTableViewController: UITableViewController {
     // the index of the items
 //    var indexOfItems: Int = 0
     //mark the numbers of the pages
-    var numOfPages: Int = 0
+    var numOfPages: Int = 1
     
     let urlMain = URL(string: "https://itsc.nju.edu.cn/xwdt/list.htm")
     
@@ -59,7 +59,7 @@ class XwdtTableViewController: UITableViewController {
     
     func loadWebContent() {
         var url: URL
-        if numOfPages == 0 {
+        if numOfPages == 1 {
             url = urlMain!
         }
         else {
