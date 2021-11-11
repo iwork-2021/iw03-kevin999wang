@@ -16,7 +16,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jSC-Y0-yPg">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" systemColor="systemBackgroundColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="Io2-79-k86" kind="relationship" relationship="viewControllers" id="VXX-ls-rkf"/>
@@ -134,14 +134,91 @@
                     <view key="view" contentMode="scaleToFill" id="uVD-U1-Ld4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8aK-Bw-ogS">
+                                <rect key="frame" x="40" y="188" width="334" height="525"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hg5-Ns-KZ3">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="87.5"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="21"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osz-65-xyE">
+                                        <rect key="frame" x="0.0" y="87.5" width="334" height="87.5"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="21"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LA3-px-yXp">
+                                        <rect key="frame" x="0.0" y="175" width="334" height="87.5"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="21"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSC-6N-nZJ">
+                                        <rect key="frame" x="0.0" y="262.5" width="334" height="87.5"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="21"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhT-rM-3k2">
+                                        <rect key="frame" x="0.0" y="350" width="334" height="87.5"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="21"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pex-vp-bhM">
+                                        <rect key="frame" x="0.0" y="437.5" width="334" height="87.5"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="21"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Hg5-Ns-KZ3" firstAttribute="leading" secondItem="8aK-Bw-ogS" secondAttribute="leading" id="JkX-Tp-2Hr"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hg5-Ns-KZ3" secondAttribute="trailing" id="ahn-Lo-Vt8"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="pWO-r2-bl6"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.66131072055835027" green="0.54372322425106046" blue="0.72411616161616155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8aK-Bw-ogS" firstAttribute="leading" secondItem="pWO-r2-bl6" secondAttribute="leading" constant="61" id="86z-4v-x3c">
+                                <variation key="heightClass=compact-widthClass=compact" constant="90"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="90"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                            </constraint>
+                            <constraint firstItem="8aK-Bw-ogS" firstAttribute="top" secondItem="pWO-r2-bl6" secondAttribute="top" constant="75" id="9yB-Zm-9UJ">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="20"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="100"/>
+                            </constraint>
+                            <constraint firstItem="pWO-r2-bl6" firstAttribute="bottom" secondItem="8aK-Bw-ogS" secondAttribute="bottom" constant="200" id="QcA-1U-rVr">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="10"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="100"/>
+                            </constraint>
+                            <constraint firstItem="pWO-r2-bl6" firstAttribute="trailing" secondItem="8aK-Bw-ogS" secondAttribute="trailing" constant="113" id="poQ-eD-dMj">
+                                <variation key="heightClass=compact-widthClass=compact" constant="90"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="90"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                            </constraint>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="关于ITSC" id="VlC-WL-fr0"/>
+                    <connections>
+                        <outlet property="item1" destination="Hg5-Ns-KZ3" id="8X8-xM-rF3"/>
+                        <outlet property="item2" destination="osz-65-xyE" id="qzK-6V-QwZ"/>
+                        <outlet property="item3" destination="LA3-px-yXp" id="LTV-KA-rai"/>
+                        <outlet property="item4" destination="nSC-6N-nZJ" id="MkH-cc-TNK"/>
+                        <outlet property="item5" destination="VhT-rM-3k2" id="7Qc-cg-FEf"/>
+                        <outlet property="item6" destination="pex-vp-bhM" id="Prg-Dm-I5Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mAy-Q2-7vE" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-94" y="950"/>
+            <point key="canvasLocation" x="211.59420289855075" y="1135.0446428571429"/>
         </scene>
         <!--新闻动态-->
         <scene sceneID="jDO-sx-XC1">
@@ -217,7 +294,9 @@
         <scene sceneID="naW-SV-keJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Alp-hH-vnJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="通知公告" image="note.text" catalog="system" id="uZA-rq-lfh"/>
+                    <tabBarItem key="tabBarItem" title="通知公告" image="note.text" catalog="system" id="uZA-rq-lfh">
+                        <color key="badgeColor" red="0.58250609860000002" green="0.55562688849999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CTt-cw-T0F">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

@@ -11,6 +11,14 @@ import SwiftSoup
 
 class AboutViewController: UIViewController {
     
+    @IBOutlet weak var item1: UILabel!
+    @IBOutlet weak var item2: UILabel!
+    @IBOutlet weak var item3: UILabel!
+    @IBOutlet weak var item4: UILabel!
+    @IBOutlet weak var item5: UILabel!
+    @IBOutlet weak var item6: UILabel!
+    
+    
     let urlMain: URL = URL(string: "https://itsc.nju.edu.cn/main.htm")!
     
 //    let webView = WKWebView()
@@ -50,10 +58,16 @@ class AboutViewController: UIViewController {
                         let aboutItem: Elements = try aboutParseFile.select("div.news_box")
 //                        let numOfEle: Int = aboutItem.array().count
 //                        print(numOfEle)
-                        for item in aboutItem{
-                            let context = try item.text()
-                            print(context)
-                        }
+//                        for item in aboutItem{
+//                            let context = try item.text()
+//                            print(context)
+//                        }
+                        self.item1.text! = try aboutItem.array()[0].text()
+                        self.item2.text! = try aboutItem.array()[1].text()
+                        self.item3.text! = try aboutItem.array()[2].text()
+                        self.item4.text! = try aboutItem.array()[3].text()
+                        self.item5.text! = try aboutItem.array()[4].text()
+                        self.item6.text! = try aboutItem.array()[5].text()
                        
                     } catch Exception.Error(let type, let message) {
                         print(message)

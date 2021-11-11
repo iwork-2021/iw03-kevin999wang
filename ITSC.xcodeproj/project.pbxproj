@@ -21,6 +21,7 @@
 		BB2A41BA273A6FBA007F1BC5 /* InfoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A41B9273A6FBA007F1BC5 /* InfoItem.swift */; };
 		BB2A41BD273C072D007F1BC5 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = BB2A41BC273C072D007F1BC5 /* SwiftSoup */; };
 		BB2A41BF273D3CB2007F1BC5 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A41BE273D3CB2007F1BC5 /* AboutViewController.swift */; };
+		BB2A41C1273D62B1007F1BC5 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A41C0273D62B0007F1BC5 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		BB2A41B7273A6E67007F1BC5 /* WebInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebInfoTableViewCell.swift; sourceTree = "<group>"; };
 		BB2A41B9273A6FBA007F1BC5 /* InfoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoItem.swift; sourceTree = "<group>"; };
 		BB2A41BE273D3CB2007F1BC5 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		BB2A41C0273D62B0007F1BC5 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				34EBE00F271F08E2005CC9EB /* Main.storyboard */,
 				BB2A41B9273A6FBA007F1BC5 /* InfoItem.swift */,
 				BB2A41B7273A6E67007F1BC5 /* WebInfoTableViewCell.swift */,
+				BB2A41C0273D62B0007F1BC5 /* InfoViewController.swift */,
 				BB2A41AF273A67D1007F1BC5 /* XwdtTableViewController.swift */,
 				BB2A41B1273A6857007F1BC5 /* TzggTableViewController.swift */,
 				BB2A41B3273A68B8007F1BC5 /* WlyxqkTableViewController.swift */,
@@ -168,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB2A41B2273A6857007F1BC5 /* TzggTableViewController.swift in Sources */,
+				BB2A41C1273D62B1007F1BC5 /* InfoViewController.swift in Sources */,
 				BB2A41B6273A68D2007F1BC5 /* AqtgTableViewController.swift in Sources */,
 				BB2A41BA273A6FBA007F1BC5 /* InfoItem.swift in Sources */,
 				BB2A41B8273A6E67007F1BC5 /* WebInfoTableViewCell.swift in Sources */,
