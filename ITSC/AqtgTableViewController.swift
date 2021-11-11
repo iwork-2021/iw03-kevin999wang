@@ -6,12 +6,26 @@
 //
 
 import UIKit
+import SwiftSoup
 
 class AqtgTableViewController: UITableViewController {
+    
+    var items: [InfoItem] = [
+        // sample item
+//        InfoItem(sumInfo: "sample", reDate: "2021-09-22", url: URL(string: "https://www.apple.cn")!)
+    ]
+    
+    // the index of the items
+//    var indexOfItems: Int = 0
+    //mark the numbers of the pages
+    var numOfPages: Int = 0
+    
+    let urlMain = URL(string: "https://itsc.nju.edu.cn/aqtg/list.htm")
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.loadWebContent()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -23,14 +37,26 @@ class AqtgTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return items.count
     }
-
+    
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "aqtgCell", for: indexPath) as! WebInfoTableViewCell
+        
+        // Configure the cell...
+        let item = items[indexPath.row]
+        cell.sumInfo.text! = item.sumInfo
+        cell.reDate.text! = item.reDate
+        return cell
+    }
+    
+    
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
@@ -60,7 +86,86 @@ class AqtgTableViewController: UITableViewController {
         }    
     }
     */
-
+    
+    func loadWebContent() {
+        var url: URL
+        if numOfPages == 0 {
+            url = urlMain!
+//            print(urlMain)
+        }
+        else {
+            url = URL(string: "https://itsc.nju.edu.cn/aqtg/list\(numOfPages).htm")!
+        }
+        
+        let task = URLSession.shared.dataTask(with: url, completionHandler: {
+            data, response, error in
+            if let error = error {
+                print("\(error.localizedDescription)")
+                return
+            }
+            guard let httpResponse = response as? HTTPURLResponse,
+                  (200...299).contains(httpResponse.statusCode) else {
+                print("server error")
+                return
+            }
+            if let mimeType = httpResponse.mimeType, mimeType == "text/html",
+                        let data = data,
+                        let string = String(data: data, encoding: .utf8) {
+//                            print(string)
+                DispatchQueue.main.async { [self] in
+                                //use swiftsoup parse url
+                                do {
+                                    let parseFile:Document = try SwiftSoup.parse(string)
+//                                    print(parseFile)
+//                                    print("1")
+                                    let titleInfo:Elements = try parseFile.select("span.news_title")
+//                                    print(titleInfo)
+                                    let metaInfo:Elements = try parseFile.select("span.news_meta")
+                                    let numOfEleThisPage: Int
+                                    numOfEleThisPage = titleInfo.array().count
+//                                    print(numOfPages)
+                                    if numOfEleThisPage == 0{
+                                        return
+                                    }
+                                    for i in 0...numOfEleThisPage-1{
+                                        let linkTitle:Element = titleInfo.array()[i]
+                                        let linkMeta:Element = metaInfo.array()[i]
+                                        let newTitle: String = try linkTitle.text()
+//                                        print(newTitle)
+                                        let newReDate: String = try linkMeta.text()
+//                                        print(newReDate)
+                                        let htmlOfTitle: String = try linkTitle.html()
+//                                        print(htmlOfTitle)
+//                                        like this
+//                                        <a href="/51/2b/c21414a545067/page.htm" target="_blank" title="我校召开本研教室资源互通协调会">我校召开本研教室资源互通协调会</a>
+                                        let htmlOfTitleParse: Document = try SwiftSoup.parse(htmlOfTitle)
+                                        let urlToReferTo: Element = try htmlOfTitleParse.select("a").first()!
+                                        let urlToAdd: String = try urlToReferTo.attr("href")
+//                                        print(urlToAdd)
+                                        let newUrlStr = "https://itsc.nju.edu.cn" + urlToAdd
+//                                        print(newUrlStr)
+                                        let newUrl = URL(string: newUrlStr)
+                                        let newItem = InfoItem(sumInfo: newTitle, reDate: newReDate, url: newUrl!)
+                                        self.items.append(newItem)
+                                    }
+                                   
+                                } catch Exception.Error(let type, let message) {
+                                    print(message)
+                                } catch {
+                                    print("error")
+                                }
+                                
+                                self.numOfPages = self.numOfPages + 1
+                                self.loadWebContent()
+                                self.tableView.reloadData()
+                            }
+            }
+        })
+        task.resume()
+            
+    }
+    
+    
     /*
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
