@@ -20,6 +20,7 @@
 		BB2A41B8273A6E67007F1BC5 /* WebInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A41B7273A6E67007F1BC5 /* WebInfoTableViewCell.swift */; };
 		BB2A41BA273A6FBA007F1BC5 /* InfoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A41B9273A6FBA007F1BC5 /* InfoItem.swift */; };
 		BB2A41BD273C072D007F1BC5 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = BB2A41BC273C072D007F1BC5 /* SwiftSoup */; };
+		BB2A41BF273D3CB2007F1BC5 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A41BE273D3CB2007F1BC5 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		BB2A41B5273A68D2007F1BC5 /* AqtgTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AqtgTableViewController.swift; sourceTree = "<group>"; };
 		BB2A41B7273A6E67007F1BC5 /* WebInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebInfoTableViewCell.swift; sourceTree = "<group>"; };
 		BB2A41B9273A6FBA007F1BC5 /* InfoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoItem.swift; sourceTree = "<group>"; };
+		BB2A41BE273D3CB2007F1BC5 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				34EBE009271F08E2005CC9EB /* AppDelegate.swift */,
 				34EBE00B271F08E2005CC9EB /* SceneDelegate.swift */,
 				34EBE00D271F08E2005CC9EB /* ViewController.swift */,
+				BB2A41BE273D3CB2007F1BC5 /* AboutViewController.swift */,
 				34EBE00F271F08E2005CC9EB /* Main.storyboard */,
 				BB2A41B9273A6FBA007F1BC5 /* InfoItem.swift */,
 				BB2A41B7273A6E67007F1BC5 /* WebInfoTableViewCell.swift */,
@@ -172,6 +175,7 @@
 				34EBE00E271F08E2005CC9EB /* ViewController.swift in Sources */,
 				34EBE00A271F08E2005CC9EB /* AppDelegate.swift in Sources */,
 				BB2A41B0273A67D1007F1BC5 /* XwdtTableViewController.swift in Sources */,
+				BB2A41BF273D3CB2007F1BC5 /* AboutViewController.swift in Sources */,
 				34EBE00C271F08E2005CC9EB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

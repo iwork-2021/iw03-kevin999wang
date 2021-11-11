@@ -12,3 +12,5 @@ An SSL error has occurred and a secure connection to the server cannot be made.
 不存在的页面通过网址也能访问
 只有18页，但19页也能通过网址访问
 https://itsc.nju.edu.cn/xwdt/list19.psp
+
+通知公告需要自己修改table为dynamic类型，添加segue
