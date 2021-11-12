@@ -131,7 +131,8 @@ class WlyxqkTableViewController: UITableViewController {
 //                                        print(urlToAdd)
                                         let newUrlStr = "https://itsc.nju.edu.cn" + urlToAdd
 //                                        print(newUrlStr)
-                                        let newUrl = URL(string: newUrlStr)
+                                        let newUrlMStr = String(newUrlStr.dropLast(4)) + "m.htm"
+                                        let newUrl = URL(string: newUrlMStr)
                                         let newItem = InfoItem(sumInfo: newTitle, reDate: newReDate, url: newUrl!)
                                         self.items.append(newItem)
                                     }
@@ -180,14 +181,19 @@ class WlyxqkTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        let toViewController = segue.destination as! InfoViewController
+        let cell = sender as! WebInfoTableViewCell
+        let index = tableView.indexPath(for: cell)!.row
+        let url:URL = items[index].url
+        toViewController.urlMain = url
     }
-    */
+    
 
 }

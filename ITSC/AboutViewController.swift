@@ -47,7 +47,7 @@ class AboutViewController: UIViewController {
                         let data = data,
                         let string = String(data: data, encoding: .utf8) {
 //                            print(string)
-                DispatchQueue.main.async { [self] in
+                DispatchQueue.main.async { //[self] in
                                 //use swiftsoup parse url
                     do {
                         let parseFile: Document = try SwiftSoup.parse(string)
