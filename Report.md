@@ -14,3 +14,8 @@ An SSL error has occurred and a secure connection to the server cannot be made.
 https://itsc.nju.edu.cn/xwdt/list19.psp
 
 通知公告需要自己修改table为dynamic类型，添加segue
+
+手机端网页
+
+table cell标题与日期重复
+选择将日期作为subtitle

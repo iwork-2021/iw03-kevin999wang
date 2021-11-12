@@ -28,7 +28,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vMx-Qh-TEE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="81.696428571428569"/>
+            <point key="canvasLocation" x="17" y="18"/>
         </scene>
         <!--新闻动态-->
         <scene sceneID="hcN-WP-Ly9">
@@ -37,30 +37,33 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="s7f-pP-HWp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.6027364731" green="0.49562323089999999" blue="0.65912723539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="separatorColor" systemColor="opaqueSeparatorColor"/>
+                        <color key="sectionIndexBackgroundColor" red="0.6027364731" green="0.49562323089999999" blue="0.65912723539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="xwdtCell" textLabel="emL-FP-RhL" detailTextLabel="Nf1-w1-lbp" style="IBUITableViewCellStyleValue1" id="EKy-eY-gKU" customClass="WebInfoTableViewCell" customModule="ITSC" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="xwdtCell" textLabel="emL-FP-RhL" detailTextLabel="Nf1-w1-lbp" style="IBUITableViewCellStyleSubtitle" id="EKy-eY-gKU" customClass="WebInfoTableViewCell" customModule="ITSC" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="59.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EKy-eY-gKU" id="cV1-gb-agL">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="标题标题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="emL-FP-RhL">
-                                            <rect key="frame" x="20" y="15" width="49.5" height="14.5"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="emL-FP-RhL">
+                                            <rect key="frame" x="20" y="8.5" width="28.5" height="21.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="2021-10-15" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nf1-w1-lbp">
-                                            <rect key="frame" x="328.5" y="15" width="65.5" height="14.5"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="2021-10-15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nf1-w1-lbp">
+                                            <rect key="frame" x="20" y="32.5" width="60" height="16.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <fontDescription key="fontDescription" name="Didot-Italic" family="Didot" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.6027364731" green="0.49562323089999999" blue="0.65912723539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="reDate" destination="Nf1-w1-lbp" id="xdR-U5-nAc"/>
@@ -218,7 +221,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mAy-Q2-7vE" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="211.59420289855075" y="1135.0446428571429"/>
+            <point key="canvasLocation" x="170" y="1107"/>
         </scene>
         <!--新闻动态-->
         <scene sceneID="jDO-sx-XC1">
@@ -246,31 +249,34 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="BXA-G4-8bA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.6027364731" green="0.49562323089999999" blue="0.65912723539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="separatorColor" systemColor="opaqueSeparatorColor"/>
+                        <color key="sectionIndexBackgroundColor" red="0.6027364731" green="0.49562323089999999" blue="0.65912723539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="tzggCell" textLabel="cCI-3u-vur" detailTextLabel="pdc-na-Vbp" style="IBUITableViewCellStyleValue1" id="1Jl-nF-oTy" customClass="WebInfoTableViewCell" customModule="ITSC" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="tzggCell" textLabel="cCI-3u-vur" detailTextLabel="pdc-na-Vbp" style="IBUITableViewCellStyleSubtitle" id="1Jl-nF-oTy" customClass="WebInfoTableViewCell" customModule="ITSC" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="59.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Jl-nF-oTy" id="cbp-CD-04c">
-                                    <rect key="frame" x="0.0" y="0.0" width="384.5" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="384.5" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cCI-3u-vur">
-                                            <rect key="frame" x="20" y="15" width="25" height="14.5"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cCI-3u-vur">
+                                            <rect key="frame" x="20" y="8.5" width="29.5" height="21.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pdc-na-Vbp">
-                                            <rect key="frame" x="343.5" y="15" width="33" height="14.5"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pdc-na-Vbp">
+                                            <rect key="frame" x="20" y="32.5" width="34" height="16.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <fontDescription key="fontDescription" name="Didot-Italic" family="Didot" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.6027364731" green="0.49562323089999999" blue="0.65912723539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="reDate" destination="pdc-na-Vbp" id="bGB-G6-h0V"/>
                                     <outlet property="sumInfo" destination="cCI-3u-vur" id="mP4-f0-LZw"/>
@@ -294,9 +300,7 @@
         <scene sceneID="naW-SV-keJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Alp-hH-vnJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="通知公告" image="note.text" catalog="system" id="uZA-rq-lfh">
-                        <color key="badgeColor" red="0.58250609860000002" green="0.55562688849999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="通知公告" image="note.text" catalog="system" id="uZA-rq-lfh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CTt-cw-T0F">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -318,31 +322,34 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="zO2-PK-KmO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.6027364731" green="0.49562323089999999" blue="0.65912723539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="separatorColor" systemColor="opaqueSeparatorColor"/>
+                        <color key="sectionIndexBackgroundColor" red="0.6027364731" green="0.49562323089999999" blue="0.65912723539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="wlyxqkCell" textLabel="jJH-1v-NBi" detailTextLabel="B96-rt-KbG" style="IBUITableViewCellStyleValue1" id="Kqu-uQ-45e" customClass="WebInfoTableViewCell" customModule="ITSC" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="wlyxqkCell" textLabel="jJH-1v-NBi" detailTextLabel="B96-rt-KbG" style="IBUITableViewCellStyleSubtitle" id="Kqu-uQ-45e" customClass="WebInfoTableViewCell" customModule="ITSC" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="59.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kqu-uQ-45e" id="xOh-AH-DKe">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jJH-1v-NBi">
-                                            <rect key="frame" x="20" y="15" width="25" height="14.5"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jJH-1v-NBi">
+                                            <rect key="frame" x="20" y="8.5" width="29.5" height="21.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B96-rt-KbG">
-                                            <rect key="frame" x="361" y="15" width="33" height="14.5"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B96-rt-KbG">
+                                            <rect key="frame" x="20" y="32.5" width="34" height="16.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <fontDescription key="fontDescription" name="Didot-Italic" family="Didot" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.6027364731" green="0.49562323089999999" blue="0.65912723539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="reDate" destination="B96-rt-KbG" id="syB-Pm-dwx"/>
                                     <outlet property="sumInfo" destination="jJH-1v-NBi" id="ur7-ZK-pgo"/>
@@ -368,30 +375,33 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="M1B-gO-CK5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.6027364731" green="0.49562323089999999" blue="0.65912723539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="separatorColor" systemColor="opaqueSeparatorColor"/>
+                        <color key="sectionIndexBackgroundColor" red="0.6027364731" green="0.49562323089999999" blue="0.65912723539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="aqtgCell" textLabel="1ix-Uu-sL2" detailTextLabel="vnt-N1-sNX" style="IBUITableViewCellStyleValue1" id="JOX-vH-snJ" customClass="WebInfoTableViewCell" customModule="ITSC" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="aqtgCell" textLabel="1ix-Uu-sL2" detailTextLabel="vnt-N1-sNX" style="IBUITableViewCellStyleSubtitle" id="JOX-vH-snJ" customClass="WebInfoTableViewCell" customModule="ITSC" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="59.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JOX-vH-snJ" id="Ae6-BH-eiB">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1ix-Uu-sL2">
-                                            <rect key="frame" x="20" y="15" width="25" height="14.5"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1ix-Uu-sL2">
+                                            <rect key="frame" x="20" y="8.5" width="29.5" height="21.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vnt-N1-sNX">
-                                            <rect key="frame" x="361" y="15" width="33" height="14.5"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vnt-N1-sNX">
+                                            <rect key="frame" x="20" y="32.5" width="34" height="16.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <fontDescription key="fontDescription" name="Didot-Italic" family="Didot" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.6027364731" green="0.49562323089999999" blue="0.65912723539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="reDate" destination="vnt-N1-sNX" id="QKh-cj-FqW"/>
@@ -453,7 +463,9 @@
         <scene sceneID="3op-rW-qCj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W5d-o1-MEI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="关于" image="info.circle" catalog="system" id="bhx-yh-0c7"/>
+                    <tabBarItem key="tabBarItem" title="关于" image="info.circle" catalog="system" id="bhx-yh-0c7">
+                        <color key="badgeColor" red="0.6027364731" green="0.49562323089999999" blue="0.65912723539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RlU-Af-aDW">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -470,7 +482,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="SuL-Jg-bMf"/>
+        <segue reference="KDB-WW-bTq"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="desktopcomputer" catalog="system" width="128" height="101"/>
@@ -480,6 +492,9 @@
         <image name="note.text" catalog="system" width="128" height="106"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
